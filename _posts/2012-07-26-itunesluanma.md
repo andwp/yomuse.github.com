@@ -31,7 +31,7 @@ tags: [OSX]
 OSX上用macport搞定就可以了，然后使用：
         <pre><code>
          1. ffmpeg -i  x.ape x.wav //转换APE/FLAC为wav格式
-		 2. lame -b 320  x.wav x.mp3 //将转换好的wav再转为mp3格式
+         2. lame -b 320  x.wav x.mp3 //将转换好的wav再转为mp3格式
         </code></pre>
 
 通常情况下就做到这里就转好了，但是此时的音频文件是一个整的，APE与FLAC文档其实都伴随有cue文档，cue文档里存放着歌曲的信息，利用这个文档，通过终端，就可以对之前转好的mp3文档进行分割。
