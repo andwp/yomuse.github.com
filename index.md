@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 你好
-tagline: 这是悠木的个人博客
+title: yomuse'blog
+tagline: 你好，这是悠木的个人博客
 ---
 {% include JB/setup %}
 
