@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: 你好
+tagline: 这是悠木的个人博客
 ---
 {% include JB/setup %}
 
