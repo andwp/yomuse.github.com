@@ -3,7 +3,7 @@ layout: post
 title: "小时间"
 description: ""
 category: 心情
-tags: [小感, 牢骚, 趣事, 生活]
+tags: [小感]
 ---
 {% include JB/setup %}
 
