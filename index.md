@@ -1,7 +1,7 @@
 ---
 layout: page
-title: yomuse'blog
-tagline: 你好，这是悠木的个人博客
+title: 木有意思
+tagline: 思考•阅读•生活•苹果•心情•Web
 ---
 {% include JB/setup %}
 
