@@ -90,7 +90,7 @@ dl{margin-bottom:18px;}
 dt,dd{line-height:18px;}
 dt{font-weight:bold;}
 dd{margin-left:9px;}
-hr{margin:18px 0;border:0;border-top:1px solid #eeeeee;border-bottom:1px solid #ffffff;}
+hr{margin:18px 0;border:0;border-top:1px solid #eeeee;border-bottom:1px solid #ffffff;}
 strong{font-weight:bold;}
 em{font-style:italic;}
 .muted{color:#999999;}
@@ -104,7 +104,7 @@ small{font-size:100%;}
 cite{font-style:normal;}
 code,pre{padding:0 3px 2px;font-family:Menlo,Monaco,"Courier New",monospace;font-size:12px;color:#333333;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
 code{padding:3px 4px;color:#d14;background-color:#f7f7f9;border:1px solid #e1e1e8;}
-pre{display:block;padding:8.5px;margin:0 0 9px;font-size:12px;line-height:18px;background-color:#f5f5f5;border:1px solid #ccc;border:1px solid rgba(0, 0, 0, 0.15);-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;white-space:pre;white-space:pre-wrap;word-break:break-all;word-wrap:break-word;}pre.prettyprint{margin-bottom:18px;}
+pre{display:block;padding:8.5px;margin:0 0 9px;font-size:12px;line-height:18px;background-color:#ffffff;border:1px solid #ccc;border:1px solid rgba(0, 0, 0, 0.15);-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;white-space:pre;white-space:pre-wrap;word-break:break-all;word-wrap:break-word;}pre.prettyprint{margin-bottom:18px;}
 pre code{padding:0;color:inherit;background-color:transparent;border:0;}
 .pre-scrollable{max-height:340px;overflow-y:scroll;}
 form{margin:0 0 18px;}
