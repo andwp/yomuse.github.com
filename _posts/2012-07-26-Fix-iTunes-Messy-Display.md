@@ -17,6 +17,7 @@ tags: [OSX]
         </code></pre>
 在实际操作时，会遇到ID3V1不支持中文的Unicode编码,转换后的ID3V1就是会全是问号
 此时可以用:
+
         <pre><code>
         mid3iconv -e gbk --remove-v1 *.mp3 //加上--remove-v1参数的方式转换
         </code></pre>
@@ -26,7 +27,7 @@ tags: [OSX]
 ## 通过终端转换APE/FLAC无损音频文档
 
 下载并编译安装「ffmpeg」.
-OSX上用macports搞定就可以了，sudo port insall后使用：
+OSX上用macports搞定就可以了，sudo port install后使用：
         <pre><code>
          1. ffmpeg -i  x.ape x.wav //转换APE/FLAC为wav格式
          2. lame -b 320  x.wav x.mp3 //将转换好的wav再转为mp3格式
