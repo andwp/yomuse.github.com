@@ -3,7 +3,7 @@ layout: post
 title: "碎片与关乎"
 description: ""
 category: 生活
-tags: [梳理]［杂文］
+tags:［杂文］
 ---
 {% include JB/setup %}
 
