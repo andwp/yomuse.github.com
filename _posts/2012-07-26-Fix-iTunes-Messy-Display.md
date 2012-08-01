@@ -53,4 +53,4 @@ BTW，有时会遇见被分割出来的mp3文件也是乱码，但正如这篇�
        </code></pre>
 
 
-PS: 通常拷贝mp3如果出现乱码，使用iTunes自带的 'Convert ID3 Tags'也是一个不错选择，本文是当初折腾iTunes时的一些心得，当然对Unix/Linux系统都是适用的，以上软件包在大家处理音频时直接apt-get或是yun install就可以了。
+PS: 通常拷贝mp3如果出现乱码，使用iTunes自带的 'Convert ID3 Tags'也是一个不错选择，本文是当初折腾iTunes时的一些心得，当然对Unix/Linux系统都是适用的，以上软件包在处理音频时直接apt-get或是yum install就可以了。
