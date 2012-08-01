@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "关乎的碎片与想法"
+title: "碎片与关乎"
 description: ""
 category: 生活
 tags: [梳理]［杂文］
