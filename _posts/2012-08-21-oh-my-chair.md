@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Oh My Chair"
+title: "椅子坏了"
 description: ""
 category:生活 
 tags: [小感]
