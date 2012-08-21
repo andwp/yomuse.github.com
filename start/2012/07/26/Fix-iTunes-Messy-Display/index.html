@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>告别iTunes歌曲导入乱码</title>
+    <meta name="description" content="">
+    <meta name="author" content="悠 木">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+   <link rel="shortcut icon" href="http://yomuse.de/images/favicon.ico">
+
+   <!-- Update theses later
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">yomuse</a>
+          <ul class="nav">
+            <li><a href="/">Home</a></li>
+            
+            
+            
+
+
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+            <li><a href="http://yomuse.de/atom.xml">Subscribe</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>告别iTunes歌曲导入乱码</h1>
+</div>
+
+<div class="row">
+  <div class="span8">
+    <h2 id='mp3mp3'>导入mp3出现????.mp3乱码时</h2>
+
+<p>下载「mutagen」，在按照readme里的提示安装. 然后使用: <pre><code>
+        mid3iconv -e gbk *.mp3 //转换当前目录不包括子目录
+        find .-iname "*.mp3" -execdir mid3iconv -e gbk{}\ //转换当前目录含子目录
+        </code></pre></p>
+
+<p>在实际操作时，会遇到ID3V1不支持中文的Unicode编码,转换后的ID3V1就是会全是问号 此时可以用: <pre><code>
+        mid3iconv -e gbk --remove-v1 *.mp3 //加上--remove-v1参数的方式转换
+        </code></pre></p>
+
+<p>当碰见需要转换APE或是FLAC此类的高音质无损音乐文档时， <strong>用XLD是一个不错的选择</strong>，不过通过终端用其它方法该怎么做呢？</p>
+
+<h2 id='apeflac'>通过终端转换APE/FLAC无损音频文档</h2>
+
+<p>下载并编译安装「ffmpeg」. OSX上用macports搞定就可以了，sudo port install后使用： <pre><code>
+         1. ffmpeg -i  x.ape x.wav //转换APE/FLAC为wav格式
+         2. lame -b 320  x.wav x.mp3 //将转换好的wav再转为mp3格式
+        </code></pre></p>
+
+<p>通常情况下就做到这里就转好了，但是此时的音频文件是一个整的，APE与FLAC文档其实都伴随有cue文档，cue文档里存放着歌曲的信息，利用这个文档，通过终端，就可以对之前转好的mp3文档进行分割。</p>
+
+<h2 id='xmp3'>通过终端切割x.mp3文档</h2>
+
+<p>下载并编译安装「mp3splt」. 然后使用: <pre><code>
+         mp3splt  -c x.cue x.mp3 //分割x.mp3文档
+       </code></pre></p>
+
+<p>这步完成之后,音乐文件名与歌曲就自动的一首首的被分割好了:)</p>
+
+<p>BTW，有时会遇见被分割出来的mp3文件也是乱码，但正如这篇文章的标题所诉，旨在告别iTunes歌曲里的乱码，所以接下来&#8230;</p>
+
+<h2 id='xcue'>通过终端转码x.cue文档</h2>
+
+<p>最后使用： <pre><code>
+       enconv -L zh_CN -x UTF-8 x.cue //将cue文档格式转换为UTF-8后再进行分割
+       </code></pre></p>
+
+<p>PS: 通常拷贝mp3如果出现乱码，使用iTunes自带的 &#8216;Convert ID3 Tags&#8217;也是一个不错选择，本文是当初折腾iTunes时的一些心得，当然对Unix/Linux系统都是适用的，以上软件包在处理音频时直接apt-get或是yum install就可以了。</p>
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/2012/07/26/As-Time-Goes-By" title="小时间">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/2012/08/01/About-Fragments" title="碎片与关乎">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+   <div class="span8">
+      <p class="announce">声明: 本文采用 <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank" rel="nofollow" title="署名-非商业性使用-相同方式共享">BY-NC-SA</a> 协议进行授权. 转载请注明转自: <a href="/2012/07/26/Fix-iTunes-Messy-Display" title="告别iTunes歌曲导入乱码" rel="nofollow">告别iTunes歌曲导入乱码</a></p>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'yomuse'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>26 July 2012</span></div>
+
+  
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#OSX-ref">OSX <span>1</span></a></li>
+    
+  
+
+
+
+    </ul>
+   
+ 
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p class="smallpra">
+&copy; 悠 木 2012 
+         &nbsp;| &nbsp;微微风簇浪，散作满河星
+ &nbsp;|&nbsp;	with help from<a href="https://github.com/mojombo/jekyll"> Jekyll</a> &<a href="https://github.com"> GitHub</a> </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+
