@@ -7,6 +7,8 @@ tagline: 思考•阅读•生活•苹果•心情•Web
 
 > If you wish to succeed, you should use persistence as your good friend, experience as your reference, prudence as your brother and hope as your sentry.
 
+> Life is like a wheel, sometimes you're up, sometimes you're down.
+
 **最近发布的文章**:
 
 <ul class="posts">
