@@ -9,6 +9,8 @@ tagline: 思考•阅读•生活•苹果•心情•Web
 
 > Life is like a wheel, sometimes you're up, sometimes you're down.
 
+>The future is already here. It's just unevenly distributed.
+
 **最近发布的文章**:
 
 <ul class="posts">
