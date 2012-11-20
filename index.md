@@ -9,9 +9,9 @@ tagline: 思考•阅读•生活•苹果•心情•Web
 
 > Life is like a wheel, sometimes you're up, sometimes you're down.
 
->The future is already here. It's just unevenly distributed.
+> The future is already here. It's just unevenly distributed.
 
->A great obstacle to happiness is to anticipate too great a happiness.
+> A great obstacle to happiness is to anticipate too great a happiness.
 
 **最近发布的文章**:
 
