@@ -1,5 +1,5 @@
 ---
-layout: recommend
+layout: page
 title: 最近看(听)过的或正在看(听)的
 tagline: 书籍•音乐•电影
 ---
