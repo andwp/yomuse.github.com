@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 最近看过的或正在看的
+title: 最近看(听)过的或正在看(听)的
 tagline: 书籍•音乐•电影
 ---
 {% include JB/setup %}
