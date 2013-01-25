@@ -8,6 +8,5 @@ tagline: 书籍•音乐•电影
 
 <script type="text/javascript" src="http://www.douban.com/service/badge/yomuse/?show=dolist&amp;n=36&amp;columns=9&amp;picsize=medium&amp;hidelogo=yes&amp;hideself=yes" ></script>
 
-<script type="text/javascript" src="http://www.douban.com/service/badge/yomuse/?show=collection&amp;n=15&amp;columns=5&amp;picsize=medium&amp;hidelogo=yes&amp;hideself=yes&amp;cat=movie|book|music" ></script> 
 
 
