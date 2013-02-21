@@ -12,7 +12,7 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>-->
-<!-- Duoshuo Comment BEGIN -->
+<!-- 
 	<div class="ds-thread"></div>
 	<script type="text/javascript">
 	var duoshuoQuery = {short_name:"yomuse"};
@@ -25,4 +25,4 @@
 		|| document.getElementsByTagName('body')[0]).appendChild(ds);
 	})();
 	</script>
-<!-- Duoshuo Comment END -->
+-->
